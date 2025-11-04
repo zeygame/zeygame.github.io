@@ -3,94 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hafta 2 - BTE311 WEB PROGRAMLAMA DERSİ</title>
+    <title>Görev 2 - BTE311 WEB PROGRAMLAMA DERSİ</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
-/* CSS Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-body {
-    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    background: linear-gradient(135deg, #A1C4FD 0%, #C2E9FB 100%);
-    min-height: 100vh;
-    color: #3c3c3c;
-    line-height: 1.6;
-}
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #2d5a5a;
+            min-height: 100vh;
+            color: #d0d0d0;
+            overflow: hidden;
+        }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 2rem 1rem;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
 
-.page-header {
-    text-align: center;
-    margin-bottom: 3rem;
-    background: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(20px);
-    padding: 3rem 2rem;
-    border-radius: 20px;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-}
+        .page-title {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #d0d0d0;
+            text-align: center;
+            margin-bottom: 3rem;
+            position: relative;
+            z-index: 10;
+        }
 
-.page-title {
-    font-size: 2.5rem;
-    font-weight: 700;
-    background: linear-gradient(90deg, #6a11cb, #2575fc);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    margin-bottom: 1rem;
-}
+        .circles-container {
+            position: relative;
+            width: 600px;
+            height: 500px;
+            margin: 0 auto;
+        }
 
-.back-button {
-    background: linear-gradient(135deg, #6a11cb, #2575fc);
-    color: white;
-    padding: 1rem 2rem;
-    border-radius: 25px;
-    text-decoration: none;
-    font-weight: 600;
-    transition: all 0.3s ease;
-    display: inline-block;
-    margin-top: 2rem;
-}
+        .circle {
+            position: absolute;
+            border-radius: 50%;
+            opacity: 0.6;
+            mix-blend-mode: screen;
+        }
 
-.back-button:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-}
+        .circle-red {
+            width: 350px;
+            height: 350px;
+            background: #ff0000;
+            top: 0;
+            left: 50px;
+        }
 
-@media (max-width: 768px) {
-    .container {
-        padding: 1rem;
-    }
-    
-    .page-header {
-        padding: 2rem 1rem;
-    }
-    
-    .page-title {
-        font-size: 2rem;
-    }
-}
+        .circle-green {
+            width: 350px;
+            height: 350px;
+            background: #00ff00;
+            top: 0;
+            right: 50px;
+        }
+
+        .circle-blue {
+            width: 350px;
+            height: 350px;
+            background: #0000ff;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .back-button {
+            background: rgba(208, 208, 208, 0.2);
+            color: #d0d0d0;
+            padding: 1rem 2rem;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: inline-block;
+            margin-top: 3rem;
+            border: 1px solid rgba(208, 208, 208, 0.3);
+            position: relative;
+            z-index: 10;
+        }
+
+        .back-button:hover {
+            background: rgba(208, 208, 208, 0.3);
+            transform: translateY(-2px);
+        }
+
+        @media (max-width: 768px) {
+            .page-title {
+                font-size: 2rem;
+            }
+
+            .circles-container {
+                width: 100%;
+                height: 400px;
+            }
+
+            .circle {
+                width: 250px;
+                height: 250px;
+            }
+
+            .circle-red {
+                left: 10%;
+            }
+
+            .circle-green {
+                right: 10%;
+            }
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <header class="page-header">
-            <h1 class="page-title">Görev 2</h1>
-            <p>Bu sayfa yakında güncellenecek...</p>
-        </header>
+        <h1 class="page-title">Görev 2</h1>
+        
+        <div class="circles-container">
+            <div class="circle circle-red"></div>
+            <div class="circle circle-green"></div>
+            <div class="circle circle-blue"></div>
+        </div>
         
         <a href="index.html" class="back-button">← Ana Sayfaya Dön</a>
     </div>
