@@ -115,6 +115,27 @@
             font-weight: 400;
         }
 
+        .checkbox-option {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.5rem;
+        }
+
+        .checkbox-option input[type="checkbox"] {
+            width: 18px;
+            height: 18px;
+            cursor: pointer;
+            margin-top: 2px;
+            flex-shrink: 0;
+        }
+
+        .checkbox-option label {
+            cursor: pointer;
+            font-weight: 400;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+
         .select-wrapper {
             position: relative;
         }
@@ -243,6 +264,13 @@
                             <option value="konya">Konya</option>
                             <option value="kayseri">Kayseri</option>
                         </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="checkbox-option">
+                        <input type="checkbox" id="terms" name="terms" required>
+                        <label for="terms">Kullanım şartlarını ve gizlilik politikasını okudum, kabul ediyorum*</label>
                     </div>
                 </div>
 
