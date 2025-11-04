@@ -45,15 +45,15 @@
 
         .weeks-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.5rem;
             margin-bottom: 4rem;
         }
 
         .week-card {
             background: white;
             border-radius: 12px;
-            padding: 2rem;
+            padding: 1.5rem;
             text-decoration: none;
             color: inherit;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
@@ -69,21 +69,21 @@
         }
 
         .week-number {
-            width: 60px;
-            height: 60px;
+            width: 45px;
+            height: 45px;
             border-radius: 50%;
             background: #4299e1;
             color: white;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 1.5rem;
+            font-size: 1.2rem;
             font-weight: 600;
-            margin: 0 auto 1rem;
+            margin: 0 auto 0.75rem;
         }
 
         .week-card h3 {
-            font-size: 1.5rem;
+            font-size: 1.2rem;
             font-weight: 600;
             color: #2d3748;
         }
@@ -105,8 +105,14 @@
             }
             
             .weeks-grid {
-                grid-template-columns: 1fr;
+                grid-template-columns: repeat(2, 1fr);
                 gap: 1rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .weeks-grid {
+                grid-template-columns: 1fr;
             }
         }
     </style>
@@ -155,6 +161,42 @@
                     
                     <div class="week-number">06</div>
                     <h3>Görev 6</h3>
+                </a>
+                
+                <a href="hafta7.html" class="week-card">
+                    
+                    <div class="week-number">07</div>
+                    <h3>Görev 7</h3>
+                </a>
+                
+                <a href="hafta8.html" class="week-card">
+                    
+                    <div class="week-number">08</div>
+                    <h3>Görev 8</h3>
+                </a>
+                
+                <a href="hafta9.html" class="week-card">
+                    
+                    <div class="week-number">09</div>
+                    <h3>Görev 9</h3>
+                </a>
+                
+                <a href="hafta10.html" class="week-card">
+                    
+                    <div class="week-number">10</div>
+                    <h3>Görev 10</h3>
+                </a>
+                
+                <a href="hafta11.html" class="week-card">
+                    
+                    <div class="week-number">11</div>
+                    <h3>Görev 11</h3>
+                </a>
+                
+                <a href="hafta12.html" class="week-card">
+                    
+                    <div class="week-number">12</div>
+                    <h3>Görev 12</h3>
                 </a>
             </div>
         </main>
