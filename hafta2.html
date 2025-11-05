@@ -1,141 +1,54 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Görev 2 - BTE311 WEB PROGRAMLAMA DERSİ</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Daireler</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Poppins', sans-serif;
-            background: linear-gradient(135deg, #A1C4FD 0%, #C2E9FB 100%);
-            min-height: 100vh;
-            color: #3c3c3c;
-            overflow: hidden;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 2rem 1rem;
-            min-height: 100vh;
+        body{
             display: flex;
-            flex-direction: column;
             justify-content: center;
             align-items: center;
-            position: relative;
-        }
-
-        .page-title {
-            font-size: 3rem;
-            font-weight: 700;
-            color: #2d3748;
-            text-align: center;
-            margin-bottom: 3rem;
-            position: relative;
-            z-index: 10;
-        }
-
-        .circles-container {
-            position: relative;
-            width: 600px;
-            height: 500px;
-            margin: 0 auto;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+            overflow: hidden;
         }
 
         .circle {
             position: absolute;
+            width: 150px;
+            height: 150px;
             border-radius: 50%;
             opacity: 0.6;
-            mix-blend-mode: screen;
+            
         }
 
-        .circle-red {
-            width: 350px;
-            height: 350px;
-            background: #ff0000;
-            top: 0;
+        .circle1{
+            background-color:#498699;
+            top: 50px;
             left: 50px;
         }
 
-        .circle-green {
-            width: 350px;
-            height: 350px;
-            background: #00ff00;
-            top: 0;
-            right: 50px;
+        .circle2{
+            background-color:#9173e1;
+            top: 50px;
+            left: 150px;
         }
 
-        .circle-blue {
-            width: 350px;
-            height: 350px;
-            background: #0000ff;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
+        .circle3{
+            background-color:#1e3e75;
+            top: 150px;
+            left: 100px;
         }
 
-        .back-button {
-            background: linear-gradient(135deg, #6a11cb, #2575fc);
-            color: white;
-            padding: 1rem 2rem;
-            border-radius: 25px;
-            text-decoration: none;
-            font-weight: 600;
-            transition: all 0.3s ease;
-            display: inline-block;
-            margin-top: 3rem;
-            position: relative;
-            z-index: 10;
-        }
-
-        .back-button:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-        }
-
-        @media (max-width: 768px) {
-            .page-title {
-                font-size: 2rem;
-            }
-
-            .circles-container {
-                width: 100%;
-                height: 400px;
-            }
-
-            .circle {
-                width: 250px;
-                height: 250px;
-            }
-
-            .circle-red {
-                left: 10%;
-            }
-
-            .circle-green {
-                right: 10%;
-            }
-        }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1 class="page-title">Görev 2</h1>
-        
-        <div class="circles-container">
-            <div class="circle circle-red"></div>
-            <div class="circle circle-green"></div>
-            <div class="circle circle-blue"></div>
-        </div>
-        
-        <a href="index.html" class="back-button">← Ana Sayfaya Dön</a>
-    </div>
+    <div class="circle circle1"></div>
+    <div class="circle circle2"></div>
+    <div class="circle circle3"></div>
+
+   
 </body>
 </html>
