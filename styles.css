@@ -1,3 +1,4 @@
+
 /* Modern CSS Reset */
 * {
     margin: 0;
@@ -33,7 +34,7 @@ body {
     line-height: 1.6;
 }
 
-/* Container */
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -43,7 +44,6 @@ body {
     flex-direction: column;
 }
 
-/* Header Styles */
 .header {
     text-align: center;
     margin-bottom: 3rem;
