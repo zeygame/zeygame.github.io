@@ -15,23 +15,29 @@
             overflow: hidden;
         }
 
+        /* Venn şemasını ortalamak için kapsayıcı */
+        .venn-container {
+            position: relative;
+            width: 300px;
+            height: 300px;
+        }
+
         .circle {
             position: absolute;
             width: 150px;
             height: 150px;
             border-radius: 50%;
             opacity: 0.6;
-            
         }
 
         .circle1{
-            background-color:#498699;
+            background-color:#994949;
             top: 50px;
             left: 50px;
         }
 
         .circle2{
-            background-color:#9173e1;
+            background-color:#e173a4;
             top: 50px;
             left: 150px;
         }
@@ -45,10 +51,10 @@
     </style>
 </head>
 <body>
-    <div class="circle circle1"></div>
-    <div class="circle circle2"></div>
-    <div class="circle circle3"></div>
-
-   
+    <div class="venn-container">
+        <div class="circle circle1"></div>
+        <div class="circle circle2"></div>
+        <div class="circle circle3"></div>
+    </div>
 </body>
 </html>
