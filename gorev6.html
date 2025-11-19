@@ -45,7 +45,6 @@
 
     <h1>Bugün Ne Yemek İstersin?</h1>
 
-    <!-- 1. Div: Pilav -->
     <div class="food-box">
         <img id="pilavImg" src="https://i.lezzet.com.tr/images-xxlarge/misirli-pirinc-pilavi-d1ee33ba-77ec-4c20-98a7-40527bfbe896" alt="Pilav">
         <h3>Pilav</h3>
@@ -53,7 +52,6 @@
         <button onclick="goster('pilavImg')">Göster</button>
     </div>
 
-    <!-- 2. Div: Çorba -->
     <div class="food-box">
         <img id="corbaImg" src="https://www.cocukludunya.com/blog/wp-content/uploads/2020/07/1-havu%C3%A7-%C3%A7orbas%C3%AC.jpg" alt="Çorba">
         <h3>Çorba</h3>
@@ -61,7 +59,6 @@
         <button onclick="goster('corbaImg')">Göster</button>
     </div>
 
-    <!-- 3. Div: Pizza -->
     <div class="food-box">
         <img id="pizzaImg" src="https://image.hurimg.com/i/hurriyet/90/0x0/64d3925a4e3fe0111cbc4425.jpg" alt="Pizza">
         <h3>Pizza</h3>
@@ -69,7 +66,6 @@
         <button onclick="goster('pizzaImg')">Göster</button>
     </div>
 
-    <!-- 4. Div: Hamburger (Rastgele) -->
     <div class="food-box">
         <img id="burgerImg" src="" alt="Hamburger">
         <h3>Hamburger</h3>
@@ -92,7 +88,6 @@
             rastgeleHamburger();
         }
 
-        // Göster - Gizle fonksiyonları
         function gizle(id) {
             document.getElementById(id).style.display = "none";
         }
@@ -101,7 +96,6 @@
             document.getElementById(id).style.display = "block";
         }
 
-        // Hamburger fotoğrafını rastgele değiştiren fonksiyon
         function rastgeleHamburger() {
             let rastgeleIndex = Math.floor(Math.random() * hamburgerResimleri.length);
             document.getElementById("burgerImg").src = hamburgerResimleri[rastgeleIndex];
