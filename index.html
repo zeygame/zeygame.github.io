@@ -3,207 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BTE311 WEB TABANLI PROGRAMLAMA DERSİ</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>BTE311 Web Programlama</title>
+
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
         body {
-            font-family: 'Poppins', sans-serif;
-            background: #f8fafc;
-            color: #1a202c;
-            line-height: 1.6;
+            font-family: Arial, sans-serif;
+            background: #f2f2f2;
+            margin: 0;
+            padding: 20px;
         }
 
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 2rem;
-        }
-
-        .header {
+        h1 {
             text-align: center;
-            margin-bottom: 4rem;
+            color: #333;
+            margin-bottom: 30px;
         }
 
-        .course-title {
-            font-size: 3rem;
-            font-weight: 700;
-            color: #2d3748;
-            margin-bottom: 1rem;
-        }
-
-        .course-subtitle {
-            font-size: 1.2rem;
-            color: #718096;
-            font-weight: 400;
-        }
-
-        .weeks-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 1.5rem;
-            margin-bottom: 4rem;
-        }
-
-        .week-card {
-            background: white;
-            border-radius: 12px;
-            padding: 1.5rem;
-            text-decoration: none;
-            color: inherit;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-            border: 1px solid #e2e8f0;
-            transition: all 0.3s ease;
-            text-align: center;
-        }
-
-        .week-card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
-            border-color: #4299e1;
-        }
-
-        .week-number {
-            width: 45px;
-            height: 45px;
-            border-radius: 50%;
-            background: #4299e1;
-            color: white;
+        .weeks {
+            max-width: 600px;
+            margin: auto;
             display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.2rem;
-            font-weight: 600;
-            margin: 0 auto 0.75rem;
+            flex-direction: column;
+            gap: 12px;
         }
 
-        .week-card h3 {
-            font-size: 1.2rem;
-            font-weight: 600;
-            color: #2d3748;
+        a.week {
+            display: block;
+            background: white;
+            padding: 12px 18px;
+            border-radius: 6px;
+            text-decoration: none;
+            color: black;
+            border: 1px solid #ddd;
+            transition: 0.2s;
+        }
+
+        a.week:hover {
+            background: #e3f2fd;
+            border-color: #90caf9;
         }
 
         .footer {
             text-align: center;
-            padding: 2rem;
-            color: #718096;
+            margin-top: 40px;
+            color: #666;
             font-size: 0.9rem;
         }
-
-        @media (max-width: 768px) {
-            .container {
-                padding: 1rem;
-            }
-            
-            .course-title {
-                font-size: 2rem;
-            }
-            
-            .weeks-grid {
-                grid-template-columns: repeat(2, 1fr);
-                gap: 1rem;
-            }
-        }
-        
-        @media (max-width: 480px) {
-            .weeks-grid {
-                grid-template-columns: 1fr;
-            }
-        }
     </style>
-    
+
 </head>
 <body>
-    <div class="container">
-        <header class="header">
-            <h1 class="course-title">BTE311 WEB TABANLI PROGRAMLAMA DERSİ</h1>
 
-        </header>
-        
-        <main class="main-content">
-            <div class="weeks-grid">
-                <a href="Form1.html" class="week-card">
-                    
-                    <div class="week-number">01</div>
-                    <h3>Görev 1</h3>
-                </a>
-                
-                <a href="hafta2.html" class="week-card">
-                    
-                    <div class="week-number">02</div>
-                    <h3>Görev 2</h3>
-                </a>
-                
-                <a href="hafta3.html" class="week-card">
-                    
-                    <div class="week-number">03</div>
-                    <h3>Görev 3</h3>
-                </a>
-                
-                <a href="hafta4.html" class="week-card">
-                    
-                    <div class="week-number">04</div>
-                    <h3>Görev 4</h3>
-                </a>
-                
-                <a href="hafta5.html" class="week-card">
-                    
-                    <div class="week-number">05</div>
-                    <h3>Görev 5</h3>
-                </a>
-                
-                <a href="hafta6.html" class="week-card">
-                    
-                    <div class="week-number">06</div>
-                    <h3>Görev 6</h3>
-                </a>
-                
-                <a href="hafta7.html" class="week-card">
-                    
-                    <div class="week-number">07</div>
-                    <h3>Görev 7</h3>
-                </a>
-                
-                <a href="hafta8.html" class="week-card">
-                    
-                    <div class="week-number">08</div>
-                    <h3>Görev 8</h3>
-                </a>
-                
-                <a href="hafta9.html" class="week-card">
-                    
-                    <div class="week-number">09</div>
-                    <h3>Görev 9</h3>
-                </a>
-                
-                <a href="hafta10.html" class="week-card">
-                    
-                    <div class="week-number">10</div>
-                    <h3>Görev 10</h3>
-                </a>
-                
-                <a href="hafta11.html" class="week-card">
-                    
-                    <div class="week-number">11</div>
-                    <h3>Görev 11</h3>
-                </a>
-                
-                <a href="hafta12.html" class="week-card">
-                    
-                    <div class="week-number">12</div>
-                    <h3>Görev 12</h3>
-                </a>
-            </div>
-        </main>
-        
-        <footer class="footer">
-            <p>&copy; 2025 Zeynep Çiftçi | BTE311 Web Programlama</p>
-        </footer>
+    <h1>BTE311 WEB TABANLI PROGRAMLAMA</h1>
+
+    <div class="weeks">
+        <a href="Form1.html" class="week">Görev 1</a>
+        <a href="hafta2.html" class="week">Görev 2</a>
+        <a href="hafta3.html" class="week">Görev 3</a>
+        <a href="hafta4.html" class="week">Görev 4</a>
+        <a href="hafta5.html" class="week">Görev 5</a>
+        <a href="hafta6.html" class="week">Görev 6</a>
+        <a href="hafta7.html" class="week">Görev 7</a>
+        <a href="hafta8.html" class="week">Görev 8</a>
+        <a href="hafta9.html" class="week">Görev 9</a>
+        <a href="hafta10.html" class="week">Görev 10</a>
+        <a href="hafta11.html" class="week">Görev 11</a>
+        <a href="hafta12.html" class="week">Görev 12</a>
     </div>
+
+    <div class="footer">
+        © 2025 Zeynep Çiftçi | Web Programlama
+    </div>
+
 </body>
 </html>
