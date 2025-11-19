@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bugün Ne Yemek İstersin?</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .food-box {
+            display: inline-block;
+            width: 250px;
+            margin: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
+
+        img {
+            width: 200px;
+            height: 150px;
+            object-fit: cover;
+            background: #eee;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            padding: 8px 15px;
+            margin: 5px;
+            cursor: pointer;
+        }
+
+        #randomBtn {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Bugün Ne Yemek İstersin?</h1>
+
+    <!-- 1. Div: Pilav -->
+    <div class="food-box">
+        <img id="pilavImg" src="https://i.lezzet.com.tr/images-xxlarge/misirli-pirinc-pilavi-d1ee33ba-77ec-4c20-98a7-40527bfbe896" alt="Pilav">
+        <h3>Pilav</h3>
+        <button onclick="gizle('pilavImg')">Gizle</button>
+        <button onclick="goster('pilavImg')">Göster</button>
+    </div>
+
+    <!-- 2. Div: Çorba -->
+    <div class="food-box">
+        <img id="corbaImg" src="https://www.cocukludunya.com/blog/wp-content/uploads/2020/07/1-havu%C3%A7-%C3%A7orbas%C3%AC.jpg" alt="Çorba">
+        <h3>Çorba</h3>
+        <button onclick="gizle('corbaImg')">Gizle</button>
+        <button onclick="goster('corbaImg')">Göster</button>
+    </div>
+
+    <!-- 3. Div: Pizza -->
+    <div class="food-box">
+        <img id="pizzaImg" src="https://image.hurimg.com/i/hurriyet/90/0x0/64d3925a4e3fe0111cbc4425.jpg" alt="Pizza">
+        <h3>Pizza</h3>
+        <button onclick="gizle('pizzaImg')">Gizle</button>
+        <button onclick="goster('pizzaImg')">Göster</button>
+    </div>
+
+    <!-- 4. Div: Hamburger (Rastgele) -->
+    <div class="food-box">
+        <img id="burgerImg" src="" alt="Hamburger">
+        <h3>Hamburger</h3>
+        <button onclick="gizle('burgerImg')">Gizle</button>
+        <button onclick="goster('burgerImg')">Göster</button>
+        <br>
+        <button id="randomBtn" onclick="rastgeleHamburger()">Rastgele Çevir</button>
+    </div>
+
+    <script>
+        const hamburgerResimleri = [
+            "https://cdn2.karaca.com/karaca-cms-uploads/airfryer4_e84ae5621f.png",
+            "https://assets.biggreenegg.eu/app/uploads/2019/03/28145521/topimage-classic-hamburger-2019m04-800x534.jpg",
+            "https://iasbh.tmgrup.com.tr/78d2fd/821/464/0/0/724/409?u=https://isbh.tmgrup.com.tr/sbh/2021/09/30/hamburger-tarifi-evde-hamburger-nasil-yapilir-1633000765331.jpg",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIs7byHu_oGPPM1-c_JuK2NM3RheM3bJTqlg&s",
+            "https://www.izmirmekanrehberi.com/izmir-mekan-haberleri/uploads/ev-yapimi-hamburger-copy.webp",
+        ];
+
+        window.onload = function() {
+            rastgeleHamburger();
+        }
+
+        // Göster - Gizle fonksiyonları
+        function gizle(id) {
+            document.getElementById(id).style.display = "none";
+        }
+
+        function goster(id) {
+            document.getElementById(id).style.display = "block";
+        }
+
+        // Hamburger fotoğrafını rastgele değiştiren fonksiyon
+        function rastgeleHamburger() {
+            let rastgeleIndex = Math.floor(Math.random() * hamburgerResimleri.length);
+            document.getElementById("burgerImg").src = hamburgerResimleri[rastgeleIndex];
+        }
+
+    </script>
+
+</body>
+</html>
